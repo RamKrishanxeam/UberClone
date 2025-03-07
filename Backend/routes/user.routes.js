@@ -4,7 +4,7 @@ const router = express.Router();
 const UserController = require("../controllers/user.controller");
 
 router.post(
-  "register",
+  "/register",
   [
     body("email").isEmail().withMessage("Invalid email"),
     body("fullname.firstname")
